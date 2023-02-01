@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Meu CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Final do meu CSS -->
+
+    <!-- CSS Bootstrap V5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Final do CSS Bootstrap V5.0.2 -->
+    
+    <!-- CSS W3SC -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Final do CSS W3SC -->
+
+    <!-- Inicio CSS do contato  -->
+    <link rel="stylesheet" href="css/secaoContato.css">
+    <link rel="stylesheet" href="css/contatoCampo.css">
+    <!-- Final CSS do contato  -->
+
+    <title>Senapple</title>
+
+    
+    
+  </head>
+  
+  <body>
+
+    <!--Início Libras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--Fim Libras-->
+
+  <!-- Iniciando barra da logo -->
+    <div class="borda_logo">
+        <img id="logo" src="img/logo.png">
+    </div>
+  <!-- Finalizando barra da logo -->
+
+  <!-- Iniciando barra aonde estão os botões -->
+        <div class="borda_escolher">
+          <a class="efeito efeito_do_botao" href="index.html"><img class="efeito efeito_do_botao" src="img/home_barra.png" height="60px"  role="button">Início</a>
+          <a class="efeito efeito_do_botao" href="sobre_nos.html"><img class="efeito efeito_do_botao" src="img/abacaxi_barra.png" height="60px"  role="button">Sobre Nós</a>
+          <a class="efeito efeito_do_botao" href="produtos.html"><img class="efeito efeito_do_botao" src="img/violao_barra.png" height="60px"  role="button">Produtos</a>
+          <a class="efeito efeito_do_botao" href="form.html"><img class="efeito efeito_do_botao" src="img/arroba_barra.png" height="60px"  role="button">Entrar ou Cadastrar</a>
+      </div>
+  <!-- Finalizando barra aonde estão os botões -->
+   
+  
+  <section class="secaoContato">
+    <div class="container">
+      
+
+      <form class="secaoContato-form">
+
+        <p class="secaoContato-form-legend">
+          Oi, tudo bem? Fale com a gente!
+          Preencha seus dados e sua mensagem:
+        </p>
+
+        <div class="contatoCampo contatoCampo--sucesso">
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required>
+        </div>  
+
+        <div class="contatoCampo contatoCampo--erro">
+          <label for="email">Email: </label>
+          <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required>
+          <span class="contatoCampo-msg contatoCampo-msg--erro">
+            Você quis dizer <a href="#">gmail.com?</a>
+          </span>
+        </div>
+
+        <div class="contatoCampo contatoCampo--erro">
+          <label>Telefone: </label>
+          <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
+          <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
+        </div>     
+
+        <div class="contatoCampo">
+          <label>CEP: </label>
+          <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+        </div>
+
+        <div class="contatoCampo">
+          <label>Endereço: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
+        </div>   
+
+        <div class="contatoCampo">
+          <label>Bairro: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
+        </div>   
+
+        <div class="contatoCampo">
+          <label>Cidade: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
+        </div>   
+
+        <div class="contatoCampo">
+          <label>Estado: </label>
+          <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
+        </div>   
+
+        <div class="contatoCampo">
+          <label>Mensagem: </label>
+          <textarea name="" cols="30" rows="10" required></textarea>
+        </div>
+
+        <div class="contatoCampo">
+          <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+          <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
+        </div>
+
+        <div class="contatoCampo">
+          <button class="secaoContato-form-cta btnPadrao" type="submit">
+            Enviar mensagem
+          </button>
+          <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">
+            Verifique os erros acima
+          </span>
+        </div>
+
+      </form>
+    </div> <!--fim .container da .secaoContato-->
+
+  </section> <!--fim .secaoContato-->
+
+  <script type="text/javascript" src="js/contrast.js"></script>
+
+        <!--Fim Colunas-->
+
+    <!-- Caso queira JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Final do linkamento JavaScript -->
+
+    <!-- Iniciando Rodapé do site -->
+    <footer>
+      <div class="footer_site">
+       
+        <h1>Redes Sociais:</h1>
+
+        <img src="img/instagram_logo.png" id="redes">
+
+      </div>
+
+    </footer>
+     <!-- Finalizando Rodapé do site --> 
+  </body>
+</html>
